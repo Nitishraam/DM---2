@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth - Sign In / Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./signin.css">
+</head>
+<body>
+     <div class="auth-container">
+       
+        <button class="close-btn" onclick="window.location.href='../index.html'">✕</button>
+        
+      
+        <div class="form-toggle">
+            <button class="toggle-btn active" data-form="signin">Sign In</button>
+            <button class="toggle-btn" data-form="signup">Sign Up</button>
+        </div>
+
+    
+        <div class="form-content active" id="signin">
+            <div class="logo">
+                <h1>Welcome Back</h1>
+            </div>
+            <form id="signinForm">
+                <div class="form-group">
+                    <label for="signinEmail">Email</label>
+                    <input type="email" id="signinEmail" required>
+                    <div class="error-msg" id="signinEmailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="signinPassword">Password</label >
+                    <input type="password" id="signinPassword" required>
+                    <div class="error-msg" id="signinPasswordError"></div>
+                </div>
+                <button type="submit" class="submit-btn" id="signinBtn">Sign In</button>
+            </form>
+            <div class="signin-link">
+                Don't have an account? <a href="#" onclick="showSignup()">Sign up here</a>
+            </div>
+        </div>
+
+    
+        <div class="form-content" id="signup">
+            <div class="logo">
+                <h1>Create Account</h1>
+            </div>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                    <div class="error-msg" id="signupNameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                    <div class="error-msg" id="signupEmailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                    <div class="error-msg" id="signupPasswordError"></div>
+                    <div class="password-strength">
+                        <div class="strength-fill" id="passwordStrength"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" required>
+                    <div class="error-msg" id="signupConfirmPasswordError"></div>
+                </div>
+                <button type="submit" class="submit-btn" id="signupBtn">Create Account</button>
+            </form>
+            <div class="signin-link">
+                Already have an account? <a href="#" onclick="showSignin()">Sign in here</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form toggle functionality
+document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const formType = this.dataset.form;
+        
+        // Update toggle buttons
+        document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Toggle forms
+        document.querySelectorAll('.form-content').forEach(form => {
+            form.classList.remove('active');
+        });
+        document.getElementById(formType).classList.add('active');
+    });
+});
+
+function showSignin() {
+    document.querySelector('[data-form="signin"]').click();
+}
+
+function showSignup() {
+    document.querySelector('[data-form="signup"]').click();
+}
+
+// Password strength checker for Sign Up
+document.getElementById('signupPassword').addEventListener('input', function() {
+    const password = this.value;
+    const strengthBar = document.getElementById('passwordStrength');
+    const errorEl = document.getElementById('signupPasswordError');
+    
+    if (password.length < 6) {
+        strengthBar.className = 'strength-fill strength-weak';
+        errorEl.textContent = 'Password must be more than 6 characters';
+        errorEl.style.display = 'block';
+    } else if (password.length < 8) {
+        strengthBar.className = 'strength-fill strength-medium';
+        errorEl.style.display = 'none';
+    } else {
+        strengthBar.className = 'strength-fill strength-strong';
+        errorEl.style.display = 'none';
+    }
+});
+
+// Sign In Form Validation
+document.getElementById('signinForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('signinEmail').value;
+    const password = document.getElementById('signinPassword').value;
+    let isValid = true;
+
+    // Clear previous errors
+    document.querySelectorAll('#signinForm .error-msg').forEach(el => {
+        el.style.display = 'none';
+    });
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('signinEmailError').textContent = 'Please enter a valid email';
+        document.getElementById('signinEmailError').style.display = 'block';
+        isValid = false;
+    }
+
+    // Password validation - MUST BE MORE THAN 6 CHARACTERS
+    if (password.length === 0) {
+        document.getElementById('signinPasswordError').textContent = 'Password is required';
+        document.getElementById('signinPasswordError').style.display = 'block';
+        isValid = false;
+    } else if (password.length <= 6) {
+        document.getElementById('signinPasswordError').textContent = 'Password must be more than 6 characters';
+        document.getElementById('signinPasswordError').style.display = 'block';
+        isValid = false;
+    }
+
+    if (isValid) {
+        document.getElementById('signinBtn').textContent = 'Redirecting...';
+        document.getElementById('signinBtn').classList.add('loading');
+        setTimeout(() => {
+            window.location.href = 'error.html';
+        }, 1500);
+    }
+});
+
+// Sign Up Form Validation
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('signupName').value;
+    const email = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
+    const confirmPassword = document.getElementById('signupConfirmPassword').value;
+    let isValid = true;
+
+    // Clear previous errors
+    document.querySelectorAll('#signupForm .error-msg').forEach(el => {
+        el.style.display = 'none';
+    });
+
+    // Name validation
+    if (name.length < 2) {
+        document.getElementById('signupNameError').textContent = 'Name must be at least 2 characters';
+        document.getElementById('signupNameError').style.display = 'block';
+        isValid = false;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('signupEmailError').textContent = 'Please enter a valid email';
+        document.getElementById('signupEmailError').style.display = 'block';
+        isValid = false;
+    }
+
+    // Password validation (>6 characters)
+    if (password.length <= 6) {
+        document.getElementById('signupPasswordError').textContent = 'Password must be more than 6 characters';
+        document.getElementById('signupPasswordError').style.display = 'block';
+        isValid = false;
+    }
+
+    // Confirm password match
+    if (password !== confirmPassword) {
+        document.getElementById('signupConfirmPasswordError').textContent = 'Passwords do not match';
+        document.getElementById('signupConfirmPasswordError').style.display = 'block';
+        isValid = false;
+    }
+
+    if (isValid) {
+        document.getElementById('signupBtn').textContent = 'Creating Account...';
+        document.getElementById('signupBtn').classList.add('loading');
+        setTimeout(() => {
+            window.location.href = 'error.html';
+        }, 1500);
+    }
+});
+
+    </script>
+</body>
+</html>

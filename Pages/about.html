@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stackly</title>
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="loader">
+        <span class="loader">Stackly</span>
+    </div>
+
+    <nav class="navbar pill-navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img class="logo2" src="../Images/logo.webp" alt="Stackly Logo"/>
+            </a> 
+            
+            <ul class="nav-menu pill-menu" id="nav-menu">
+                <li class="dropdown pill-dropdown">
+                    <a href="../index.html" class="nav-link pill-link dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content pill-dropdown">
+                        <a href="./error.html">Home2</a>
+                    </div>
+                </li>
+                <li><a style="color: rgb(236, 154, 40);" href="./about.html" class="nav-link pill-link">About</a></li>
+                <li><a href="./error.html" class="nav-link pill-link">Service</a></li>
+                <li><a href="./error.html" class="nav-link pill-link">Blog</a></li>
+                <li><a href="./error.html" class="nav-link pill-link">Contact</a></li>
+                <li><a href="./error.html" class="nav-link pill-link">Dashboard</a></li>
+                <li class="signin-mobile"><a href="./signin.html" class="nav-link pill-link"><i class="fa-solid fa-user"></i> Sign In</a></li>
+            </ul>
+            
+        
+            <a href="./signin.html" class="signin-btn pill-signin"><i class="fa-solid fa-user"></i> Sign In</a>
+            
+            <div class="hamburger pill-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+            const dropdowns = document.querySelectorAll('.pill-dropdown');
+            const navbar = document.querySelector('.navbar');
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                navbar.style.top = window.scrollY > 50 ? '0.5rem' : '0.5rem';
+            });
+
+            // Hamburger toggle
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Mobile dropdown toggle
+            dropdowns.forEach(function(dropdown) {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                        return false;
+                    }
+                });
+            });
+
+            document.querySelectorAll('.pill-link, .dropdown-content a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        setTimeout(() => {
+                            hamburger.classList.remove('active');
+                            navMenu.classList.remove('active');
+                            document.body.classList.remove('menu-open');
+                            dropdowns.forEach(d => d.classList.remove('active'));
+                        }, 200);
+                    }
+                });
+            });
+
+            // Close dropdowns on outside click
+            document.addEventListener('click', function(e) {
+                if (!navbar.contains(e.target)) {
+                    dropdowns.forEach(d => d.classList.remove('active'));
+                }
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.pointerEvents = "none";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1100);
+        });
+    </script>
+    
+</body>
+</html>
