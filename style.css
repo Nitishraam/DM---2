@@ -230,10 +230,10 @@ body.menu-open {
     .navbar {
         top: 1rem;
         width: 95%;
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 40px;
     }
-
+  
     .pill-menu {
         position: fixed;
         top: 0;
