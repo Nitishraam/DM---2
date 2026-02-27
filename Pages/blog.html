@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./blog.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+         <div id="loader">
+        <span class="loader">Stackly</span>
+    </div>
+
+    <nav class="navbar pill-navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img class="logo2" src="../Images/logo.webp" alt="Stackly Logo"/>
+            </a> 
+            
+            <ul class="nav-menu pill-menu" id="nav-menu">
+                <li class="dropdown pill-dropdown">
+                    <a href="../index.html" class="nav-link pill-link dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content pill-dropdown">
+                        <a href="./error.html">Home2</a>
+                    </div>
+                </li>
+                <li><a  href="./about.html" class="nav-link pill-link">About</a></li>
+                <li><a  href="./service.html" class="nav-link pill-link">Service</a></li>
+                <li><a style="color: rgb(236, 154, 40);" href="./blog.html" class="nav-link pill-link">Blog</a></li>
+                <li><a href="./contact.html" class="nav-link pill-link">Contact</a></li>
+                <li><a href="./dashboard.html" class="nav-link pill-link">Dashboard</a></li>
+                <li class="signin-mobile"><a href="./signin.html" class="nav-link pill-link"><i class="fa-solid fa-user"></i> Sign In</a></li>
+            </ul>
+            
+        
+            <a href="./signin.html" class="signin-btn pill-signin"><i class="fa-solid fa-user"></i> Sign In</a>
+            
+            <div class="hamburger pill-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="page-path">
+    <div class="path-container">
+        <a href="../index.html">Home</a>
+        <span class="path-divider">/</span>
+        <span class="path-current">Service</span>
+    </div>
+</div>
+
+<section class="blog-hero-center" data-aos="fade-up">
+    <div class="container">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <div class="section-badge">
+                BLOG INSIGHTS
+            </div>
+            
+            <h1>Performance Marketing <br><strong>Strategies That Scale</strong></h1>
+            
+            <p class="hero-subtitle">Real tactics from scaling 250+ brands to $10M+. Meta, Google, TikTok systems delivering 4.3X average ROAS.</p>
+            
+            <div class="blog-stats">
+                <div class="stat-item">
+                    <span>4.3X</span>
+                    <small>Avg ROAS</small>
+                </div>
+                <div class="stat-item">
+                    <span>250+</span>
+                    <small>Brands Scaled</small>
+                </div>
+                <div class="stat-item">
+                    <span>127</span>
+                    <small>Articles</small>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="./error.html" class="btn-primary">Browse All Posts</a>
+                <a href="./error.html" class="btn-secondary">View Categories</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="featured-posts" data-aos="fade-up">
+    <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-delay="200">
+            <h2>Featured Articles</h2>
+            <p>Top-performing insights from our experts</p>
+        </div>
+
+        <div class="posts-grid">
+           
+            <article class="post-card featured" data-aos="fade-up" data-aos-delay="300">
+                <div class="post-image">
+                    <img src="../Images/b1.webp" alt="Meta Ads">
+                    <div class="post-category">Meta Ads</div>
+                </div>
+                <div class="post-content">
+                    <h3>Meta Ads Scaling Blueprint (4.8X ROAS)</h3>
+                    <p>Complete system used to scale 47 DTC brands past $10M ARR. Creative testing + bid optimization revealed.</p>
+                    <div class="post-meta">
+                        <div class="author-date">
+                            <img src="../Images/p1 (1).webp" alt="Alex">
+                            <span>Alex Chen</span>
+                            <span>· Feb 26</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="fas fa-clock"></i>
+                            <span>8 min</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+         
+            <article class="post-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="post-image">
+                    <img src="../Images/b2.webp" alt="Google Ads">
+                    <div class="post-category">Google Ads</div>
+                </div>
+                <div class="post-content">
+                    <h3>Performance Max Campaigns That Convert</h3>
+                    <p>Google's algorithm + our feed optimization = 5.2X ROAS. Exact settings for e-commerce scaling.</p>
+                    <div class="post-meta">
+                        <div class="author-date">
+                            <img src="../Images/p1 (3).webp" alt="Sarah">
+                            <span>Sarah Lin</span>
+                            <span>· Feb 24</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="fas fa-clock"></i>
+                            <span>11 min</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+         
+            <article class="post-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="post-image">
+                    <img src="../Images/b3.webp" alt="TikTok">
+                    <div class="post-category">TikTok</div>
+                </div>
+                <div class="post-content">
+                    <h3>TikTok Creative Systems (300% CTR)</h3>
+                    <p>UGC production + Spark Ads scaling. Ex-Facebook strategist reveals viral formula.</p>
+                    <div class="post-meta">
+                        <div class="author-date">
+                            <img src="../Images/p1 (2).webp" alt="Mike">
+                            <span>Mike Patel</span>
+                            <span>· Feb 22</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="fas fa-clock"></i>
+                            <span>9 min</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="view-all" data-aos="fade-up" data-aos-delay="600">
+            <a href="./error.html" class="btn-outline">View All Posts →</a>
+        </div>
+    </div>
+</section>
+
+<section class="recent-posts" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-delay="200">
+            <h2>Latest Posts</h2>
+            <p>Fresh insights from the past week</p>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-posts">
+                <!-- Post 1 -->
+                <div class="timeline-post" data-aos="fade-right" data-aos-delay="300">
+                    <div class="post-date">Feb 27</div>
+                    <div class="post-content">
+                        <h3>Meta Ads Bid Strategy Update (2026)</h3>
+                        <p>New Advantage+ campaigns delivering 5.1X ROAS. Complete settings breakdown.</p>
+                        <div class="post-meta">
+                            <span class="author">Alex Chen</span>
+                            <span class="time">7 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="timeline-post" data-aos="fade-left" data-aos-delay="400">
+                    <div class="post-date">Feb 26</div>
+                    <div class="post-content">
+                        <h3>Google Performance Max Feed Optimization</h3>
+                        <p>3-step feed structure = 42% ROAS improvement. Merchant Center settings revealed.</p>
+                        <div class="post-meta">
+                            <span class="author">Sarah Lin</span>
+                            <span class="time">9 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="timeline-post" data-aos="fade-right" data-aos-delay="500">
+                    <div class="post-date">Feb 25</div>
+                    <div class="post-content">
+                        <h3>TikTok Spark Ads Scaling Framework</h3>
+                        <p>UGC + influencer content = 320% CTR lift. Exact campaign structure.</p>
+                        <div class="post-meta">
+                            <span class="author">Mike Patel</span>
+                            <span class="time">11 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" data-aos="fade-up" data-aos-delay="600">
+            <a href="./error.html" class="btn-load">Load More Posts</a>
+        </div>
+    </div>
+</section>
+
+<section class="popular-posts" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-delay="200">
+            <h2>Most Popular</h2>
+            <p>Highest performing articles this month</p>
+        </div>
+
+        <div class="popular-grid">
+            <div class="popular-main" data-aos="zoom-in" data-aos-delay="300">
+                <div class="main-post">
+                    <div class="post-image">
+                        <img src="../Images/b6.webp" alt="Scaling">
+                        <div class="post-trend">🔥 Trending #1</div>
+                    </div>
+                    <div class="post-info">
+                        <h3>The Complete Meta Ads Scaling System (4.8X ROAS)</h3>
+                        <p>47 brands scaled past $10M ARR using this exact framework. Creative testing → optimization → scaling.</p>
+                        <div class="post-stats">
+                            <span>4.8K <small>views</small></span>
+                            <span>289 <small>comments</small></span>
+                            <span>42 <small>shares</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-side" data-aos="fade-left" data-aos-delay="400">
+                <div class="side-post" data-aos="fade-up" data-aos-delay="450">
+                    <div class="side-image">
+                        <img src="../Images/b4.webp" alt="Google">
+                    </div>
+                    <h4>Google Performance Max Feed Guide</h4>
+                    <div class="side-stats">
+                        <span>2.1K views</span>
+                        <span>8 min</span>
+                    </div>
+                </div>
+
+                <div class="side-post" data-aos="fade-up" data-aos-delay="500">
+                    <div class="side-image">
+                        <img src="../Images/b5.webp" alt="TikTok">
+                    </div>
+                    <h4>TikTok UGC Creative Formula</h4>
+                    <div class="side-stats">
+                        <span>1.8K views</span>
+                        <span>11 min</span>
+                    </div>
+                </div>
+
+                <div class="side-post" data-aos="fade-up" data-aos-delay="550">
+                    <div class="side-image">
+                        <img src="../Images/b7.webp" alt="Creative">
+                    </div>
+                    <h4>AI Creative Engine Setup</h4>
+                    <div class="side-stats">
+                        <span>1.5K views</span>
+                        <span>9 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="newsletter-signup" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="newsletter-content" data-aos="zoom-in" data-aos-delay="200">
+            <div class="newsletter-icon">📧</div>
+            <h2>Weekly Growth Newsletter</h2>
+            <p>Get our best Meta Ads, Google Ads, and scaling tactics delivered to your inbox every week. <strong>12,847 marketers already subscribed.</strong></p>
+            
+            <div class="newsletter-stats">
+                <div class="stat-item">
+                    <span>97%</span>
+                    <small>Open Rate</small>
+                </div>
+                <div class="stat-item">
+                    <span>42%</span>
+                    <small>Click Rate</small>
+                </div>
+            </div>
+
+       <div class="newsletter-form">
+    <form action="./error.html" method="GET">
+        <input type="email" name="email" placeholder="Enter your email address" class="email-input" required autocomplete="email">
+        <button type="submit" class="subscribe-btn">Subscribe Free</button>
+    </form>
+</div>
+
+            
+            <div class="signup-guarantee">
+                <i class="fas fa-lock"></i>
+                <span>Cancel anytime. We respect your privacy. No spam.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="recent-comments" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-delay="200">
+            <h2>Latest Comments</h2>
+            <p>Real feedback from real marketers</p>
+        </div>
+
+        <div class="comments-grid">
+            <div class="comment-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="comment-header">
+                    <img src="../Images/p1.webp" alt="John D." class="comment-avatar">
+                    <div class="comment-author">
+                        <span class="author-name">John D.</span>
+                        <span class="comment-date">2 hours ago</span>
+                    </div>
+                </div>
+                <p>"Scaled from $15K → $89K ad spend in 3 weeks using your Meta blueprint. 4.2X ROAS. Game changer."</p>
+                <div class="comment-post">
+                    <i class="fas fa-link"></i>
+                    <span>On "Meta Ads Scaling Blueprint"</span>
+                </div>
+            </div>
+
+            <div class="comment-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="comment-header">
+                    <img src="../Images/p2.webp" alt="Sarah K." class="comment-avatar">
+                    <div class="comment-author">
+                        <span class="author-name">Sarah K.</span>
+                        <span class="comment-date">5 hours ago</span>
+                    </div>
+                </div>
+                <p>"Google Performance Max settings fixed my feed issues. 38% ROAS jump in 48hrs. Exact steps worked."</p>
+                <div class="comment-post">
+                    <i class="fas fa-link"></i>
+                    <span>On "Performance Max Feed Guide"</span>
+                </div>
+            </div>
+
+            <div class="comment-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="comment-header">
+                    <img src="../Images/p3.webp" alt="Mike R." class="comment-avatar">
+                    <div class="comment-author">
+                        <span class="author-name">Mike R.</span>
+                        <span class="comment-date">1 day ago</span>
+                    </div>
+                </div>
+                <p>"TikTok UGC system = 290% CTR. Best $97 I ever spent. Templates + scaling rules are gold."</p>
+                <div class="comment-post">
+                    <i class="fas fa-link"></i>
+                    <span>On "TikTok Creative Framework"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog-final-cta" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="cta-content" data-aos="zoom-in" data-aos-delay="200">
+            <h2>Want Better Ad Results?</h2>
+            <p>Apply our strategies to your business. Free audit reveals exact opportunities.</p>
+            
+            <div class="cta-buttons">
+                <a href="./error.html" class="btn-primary">Free Ad Audit</a>
+                <a href="./error.html   " class="btn-secondary">View Services</a>
+            </div>
+            
+            <div class="cta-trust">
+                <div class="trust-stats">
+                    <span>4.3X <small>Avg ROAS</small></span>
+                    <span>250+ <small>Brands</small></span>
+                </div>
+                <div class="guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Zero results = zero payment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-row-1">
+            <div class="company-block">
+                <h3 class="company-name">Stackly</h3>
+                <p class="company-desc">We help businesses scale through performance marketing. No contracts, results-driven approach with 300%+ average client growth.</p>
+                <div class="company-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@stackly.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quick-links-block">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./service.html">Service</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="address-block">
+                <h4>Visit Us</h4>
+                <p>123 Marketing Street<br>Business District<br>Salem, Tamil Nadu 636001<br>India</p>
+            </div>
+        </div>
+
+        <div class="footer-row-2">
+            <div class="map-placeholder">
+                <div class="map-icon">📍</div>
+                <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+        </div>
+
+        <div class="footer-row-3">
+            <div class="copyright">
+                <p>&copy; 2026 GrowthForge Digital. All rights reserved.</p>
+            </div>
+            <div class="social-row">
+                <a href="./error.html" class="social-link facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="./error.html" class="social-link twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+            const dropdowns = document.querySelectorAll('.pill-dropdown');
+            const navbar = document.querySelector('.navbar');
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                navbar.style.top = window.scrollY > 50 ? '0.5rem' : '0.5rem';
+            });
+
+            // Hamburger toggle
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Mobile dropdown toggle
+            dropdowns.forEach(function(dropdown) {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                        return false;
+                    }
+                });
+            });
+
+            document.querySelectorAll('.pill-link, .dropdown-content a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        setTimeout(() => {
+                            hamburger.classList.remove('active');
+                            navMenu.classList.remove('active');
+                            document.body.classList.remove('menu-open');
+                            dropdowns.forEach(d => d.classList.remove('active'));
+                        }, 200);
+                    }
+                });
+            });
+
+            // Close dropdowns on outside click
+            document.addEventListener('click', function(e) {
+                if (!navbar.contains(e.target)) {
+                    dropdowns.forEach(d => d.classList.remove('active'));
+                }
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.pointerEvents = "none";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1100);
+        });
+    </script>
+    
+</body>
+</html>
