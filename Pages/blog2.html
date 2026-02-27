@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./blog2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="loader">
+        <span class="loader">Stackly</span>
+    </div>
+
+    <nav class="navbar pill-navbar" id="navbar">
+        <div class="nav-container">
+            <a href="./home2.html" class="logo">
+                <img class="logo2" src="../Images/logo.webp" alt="Stackly Logo"/>
+            </a> 
+            
+            <ul class="nav-menu pill-menu" id="nav-menu">
+                <li class="dropdown pill-dropdown">
+                    <a  href="./home2.html" class="nav-link pill-link dropdown-toggle">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content pill-dropdown">
+                        <a href="../index.html">Home2</a>
+                    </div>
+                </li>
+                <li><a  href="./about2.html" class="nav-link pill-link">About</a></li>
+                <li><a href="./service2.html" class="nav-link pill-link">Service</a></li>
+                <li><a  style="color: rgb(236, 40, 40);"  href="./blog2.html" class="nav-link pill-link">Blog</a></li>
+                <li><a  href="./contact2.html" class="nav-link pill-link">Contact</a></li>
+                <li><a href="./dashboard.html" class="nav-link pill-link">Dashboard</a></li>
+                <li class="signin-mobile"><a href="./signin.html" class="nav-link pill-link"><i class="fa-solid fa-user"></i> Sign In</a></li>
+            </ul>
+            
+        
+            <a href="./signin.html" class="signin-btn pill-signin"><i class="fa-solid fa-user"></i> Sign In</a>
+            
+            <div class="hamburger pill-hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+<section class="blog2-hero" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="hero-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-badge">Insights Hub</div>
+            <h1>Scale Secrets<br>Revealed</h1>
+            <p>Ex-Meta engineers decode what actually moves the needle. No fluff. Just frameworks that delivered $47M revenue.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <span>250+</span>
+                    <small>Brands Scaled</small>
+                </div>
+                <div class="stat-box">
+                    <span>4.3X</span>
+                    <small>Avg ROAS</small>
+                </div>
+                <div class="stat-box">
+                    <span>97%</span>
+                    <small>Success Rate</small>
+                </div>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="./error.html" class="cta-primary">Latest Posts</a>
+                <a href="./error.html" class="cta-secondary">Browse Topics</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="blog2-featured" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="zoom-in">
+            <h2>Featured Frameworks</h2>
+            <p>Battle-tested systems from $47M revenue campaigns</p>
+        </div>
+        
+        <div class="featured-track">
+            <div class="track-item primary" data-aos="fade-right">
+                <div class="track-visual">
+                    <img src="../Images/bb4.webp" alt="ROAS">
+                    <div class="visual-overlay">
+                        <div class="roi-tag">7.2X</div>
+                    </div>
+                </div>
+                <div class="track-content">
+                    <div class="post-meta">
+                        <span class="post-category">ROAS</span>
+                        <span class="post-date">Feb 27</span>
+                    </div>
+                    <h3>7.2X ROAS Blueprint</h3>
+                    <p>Creative testing → $890K scale. Full system breakdown.</p>
+                </div>
+            </div>
+            
+            <div class="track-item secondary" data-aos="fade-up">
+                <div class="track-visual">
+                    <img src="../Images/bb5.webp" alt="Hooks">
+                    <div class="visual-overlay">
+                        <div class="framework-tag">47</div>
+                    </div>
+                </div>
+                <div class="track-content">
+                    <div class="post-meta">
+                        <span class="post-category">Hooks</span>
+                    </div>
+                    <h3>47 Converting Hooks</h3>
+                    <p>Copy-paste templates from 50+ niches.</p>
+                </div>
+            </div>
+            
+            <div class="track-item secondary" data-aos="fade-left">
+                <div class="track-visual">
+                    <img src="../Images/bb6.webp" alt="Scale">
+                    <div class="visual-overlay">
+                        <div class="scale-tag">$47M</div>
+                    </div>
+                </div>
+                <div class="track-content">
+                    <div class="post-meta">
+                        <span class="post-category">Scale</span>
+                    </div>
+                    <h3>Infinite Scale System</h3>
+                    <p>Break $50K/month ceiling forever.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-footer" data-aos="fade-up" data-aos-delay="300">
+            <a href="./error.html" class="framework-cta">
+                View All Frameworks
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="blog2-categories" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="zoom-in">
+            <h2>Content Categories</h2>
+            <p>Choose your growth challenge</p>
+        </div>
+        
+        <div class="category-tabs">
+            <div class="tab-list">
+                <button class="tab active" data-tab="roas">ROAS (18)</button>
+                <button class="tab" data-tab="creative">Creative (12)</button>
+                <button class="tab" data-tab="scale">Scale (9)</button>
+                <button class="tab" data-tab="buying">Buying (7)</button>
+            </div>
+            
+            <div class="tab-panels">
+                <div class="tab-panel active" id="roas">
+                    <div class="panel-grid">
+                        <div class="panel-item">
+                            <h4>7.2X ROAS Blueprint</h4>
+                            <p>Creative testing system</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>4.3X Guarantee System</h4>
+                            <p>Math behind performance</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>ROAS Kill Switches</h4>
+                            <p>Spot failing campaigns</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="creative">
+                    <div class="panel-grid">
+                        <div class="panel-item">
+                            <h4>47 Converting Hooks</h4>
+                            <p>Copy-paste templates</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>UGC Production Guide</h4>
+                            <p>3X CTR vs studio ads</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>Dynamic Hooks Matrix</h4>
+                            <p>Problem → agitate → solve</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="scale">
+                    <div class="panel-grid">
+                        <div class="panel-item">
+                            <h4>Infinite Scale Blueprint</h4>
+                            <p>Break $50K ceiling</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>$890K Case Study</h4>
+                            <p>Zero to scale playbook</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>Scale Ceiling Destroyer</h4>
+                            <p>97% fail rate solution</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-panel" id="buying">
+                    <div class="panel-grid">
+                        <div class="panel-item">
+                            <h4>Bid Optimization 2026</h4>
+                            <p>LTV-first bidding</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>Budget Pacing System</h4>
+                            <p>Never overspend again</p>
+                        </div>
+                        <div class="panel-item">
+                            <h4>Auction Timing Matrix</h4>
+                            <p>Cheapest CPM windows</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog2-authors" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="zoom-in">
+            <h2>Expert Authors</h2>
+            <p>Ex-Meta engineers who scaled $47M revenue</p>
+        </div>
+        
+        <div class="authors-grid">
+            <div class="author-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="author-avatar">
+                    <img src="../Images/p1 (1).webp" alt="Alex Chen">
+                    <div class="status-online"></div>
+                </div>
+                <div class="author-info">
+                    <h3>Alex Chen</h3>
+                    <p class="author-role">Head of Scaling</p>
+                    <div class="author-stats">
+                        <span>47</span>
+                        <span>Posts</span>
+                    </div>
+                    <p>Ex-Meta Ads engineer. Built 7.2X ROAS system used by 250+ brands.</p>
+                    <a href="./error.html" class="author-link">View Posts →</a>
+                </div>
+            </div>
+            
+            <div class="author-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="author-avatar">
+                    <img src="../Images/p1 (3).webp"Sarah Lin">
+                </div>
+                <div class="author-info">
+                    <h3>Sarah Lin</h3>
+                    <p class="author-role">Creative Lead</p>
+                    <div class="author-stats">
+                        <span>32</span>
+                        <span>Posts</span>
+                    </div>
+                    <p>UGC specialist. 47 hooks framework → 12K orders generated.</p>
+                    <a href="./error.html" class="author-link">View Posts →</a>
+                </div>
+            </div>
+            
+            <div class="author-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="author-avatar">
+                    <img src="../Images/p1 (2).webp" alt="Mike Patel">
+                </div>
+                <div class="author-info">
+                    <h3>Mike Patel</h3>
+                    <p class="author-role">Scale Architect</p>
+                    <div class="author-stats">
+                        <span>28</span>
+                        <span>Posts</span>
+                    </div>
+                    <p>Infinite scaling systems. Broke $50K/month ceiling for 97% success rate.</p>
+                    <a href="./error.html" class="author-link">View Posts →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog2-results" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="section-header" data-aos="zoom-in">
+            <h2>Proven Results</h2>
+            <p>Campaign performance across 250+ brands</p>
+        </div>
+        
+        <div class="results-metrics">
+            <div class="metric-group primary" data-aos="fade-right">
+                <div class="metric-number">4.3X</div>
+                <div class="metric-label">Average ROAS</div>
+                <div class="metric-bar">
+                    <div class="bar-fill" style="width: 86%"></div>
+                </div>
+            </div>
+            
+            <div class="metric-group" data-aos="fade-up">
+                <div class="metric-number">97%</div>
+                <div class="metric-label">Success Rate</div>
+                <div class="metric-bar">
+                    <div class="bar-fill" style="width: 97%"></div>
+                </div>
+            </div>
+            
+            <div class="metric-group" data-aos="fade-left">
+                <div class="metric-number">$47M</div>
+                <div class="metric-label">Revenue Scaled</div>
+                <div class="metric-bar">
+                    <div class="bar-fill" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-showcase">
+            <div class="showcase-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="case-image">
+                    <img src="../Images/bb1.webp" alt="Case Study">
+                </div>
+                <div class="case-stats">
+                    <div class="stat-line">
+                        <span>7.2X ROAS</span>
+                        <span>$890K Spend</span>
+                    </div>
+                    <div class="stat-line">
+                        <span>12K Orders</span>
+                        <span>90 Days</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="showcase-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="case-image">
+                    <img src="../Images/bb2.webp" alt="Case Study">
+                </div>
+                <div class="case-stats">
+                    <div class="stat-line">
+                        <span>6.8X ROAS</span>
+                        <span>$1.2M Revenue</span>
+                    </div>
+                    <div class="stat-line">
+                        <span>18K Orders</span>
+                        <span>120 Days</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-cta" data-aos="fade-up" data-aos-delay="300">
+            <a href="./error.html" class="cta-button">Scale Your Brand →</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog2-newsletter" data-aos="fade-up" style="padding: 30px 0px;">
+    <div class="container">
+        <div class="newsletter-grid">
+            <div class="newsletter-content" data-aos="fade-right">
+                <div class="section-badge">Weekly Drop</div>
+                <h2>Get Frameworks <br>Delivered Weekly</h2>
+                <p>Ex-Meta scaling systems • New hooks every Friday • 4.3X case studies. Join 12K marketers.</p>
+                
+                <div class="newsletter-perks">
+                    <div class="perk-item">
+                        <span>📱</span>
+                        <strong>ROAS Alerts</strong>
+                        <small>Real-time benchmarks</small>
+                    </div>
+                    <div class="perk-item">
+                        <span>🎯</span>
+                        <strong>Hook Library</strong>
+                        <small>47+ templates updated</small>
+                    </div>
+                    <div class="perk-item">
+                        <span>📊</span>
+                        <strong>Scale Reports</strong>
+                        <small>$47M data breakdowns</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsletter-form" data-aos="fade-left" data-aos-delay="200">
+                <div class="form-header">
+                    <h3>Start Getting Results</h3>
+                    <p>Free. No spam. Unsubscribe anytime.</p>
+                </div>
+                
+               <form class="newsletter-signup" action="./error.html" method="GET">
+        <div class="email-input">
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <button type="submit">Subscribe</button>
+        </div>
+        <div class="subscriber-count">
+            <span>12,847</span> subscribers
+        </div>
+    </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-row-1">
+            <div class="company-block">
+                <h3 class="company-name">Stackly</h3>
+                <p class="company-desc">We help businesses scale through performance marketing. No contracts, results-driven approach with 300%+ average client growth.</p>
+                <div class="company-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@stackly.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quick-links-block">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./service2.html">Service</a></li>
+                    <li><a href="./blog2.html">Blog</a></li>
+                    <li><a href="./contact2.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="address-block">
+                <h4>Visit Us</h4>
+                <p>123 Marketing Street<br>Business District<br>Salem, Tamil Nadu 636001<br>India</p>
+            </div>
+        </div>
+
+        <div class="footer-row-2">
+            <div class="map-placeholder">
+                <div class="map-icon">📍</div>
+                <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+        </div>
+
+        <div class="footer-row-3">
+            <div class="copyright">
+                <p>&copy; 2026 GrowthForge Digital. All rights reserved.</p>
+            </div>
+            <div class="social-row">
+                <a href="./error.html" class="social-link facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="./error.html" class="social-link twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.blog2-categories .tab');
+    const panels = document.querySelectorAll('.blog2-categories .tab-panel');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove active class from all tabs and panels
+            tabs.forEach(t => t.classList.remove('active'));
+            panels.forEach(p => p.classList.remove('active'));
+            
+            // Add active class to clicked tab
+            this.classList.add('active');
+            
+            // Show corresponding panel
+            const targetPanel = document.getElementById(this.dataset.tab);
+            targetPanel.classList.add('active');
+        });
+    });
+});
+</script>
+
+          <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+            const dropdowns = document.querySelectorAll('.pill-dropdown');
+            const navbar = document.querySelector('.navbar');
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                navbar.style.top = window.scrollY > 50 ? '0.5rem' : '0.5rem';
+            });
+
+            // Hamburger toggle
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Mobile dropdown toggle
+            dropdowns.forEach(function(dropdown) {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                        return false;
+                    }
+                });
+            });
+
+            document.querySelectorAll('.pill-link, .dropdown-content a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        setTimeout(() => {
+                            hamburger.classList.remove('active');
+                            navMenu.classList.remove('active');
+                            document.body.classList.remove('menu-open');
+                            dropdowns.forEach(d => d.classList.remove('active'));
+                        }, 200);
+                    }
+                });
+            });
+
+            // Close dropdowns on outside click
+            document.addEventListener('click', function(e) {
+                if (!navbar.contains(e.target)) {
+                    dropdowns.forEach(d => d.classList.remove('active'));
+                }
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.pointerEvents = "none";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1100);
+        });
+    </script>
+
+
+</body>
+</html>
