@@ -52,7 +52,7 @@
     <div class="path-container">
         <a href="../index.html">Home</a>
         <span class="path-divider">/</span>
-        <span class="path-current">Service</span>
+        <span class="path-current">Dashboard</span>
     </div>
 </div>
 
@@ -64,32 +64,32 @@
             <!-- Sidebar Navigation -->
             <div class="dashboard-sidebar">
                 <div class="sidebar-nav">
-                    <div class="nav-item active">
+                    <div class="nav-item ">
                         <i class="fas fa-chart-line"></i>
-                        <span>Overview</span>
+                        <a class="nav-item1 active" href="./error.html">Overview</a>
                     </div>
                     <div class="nav-item">
                         <i class="fas fa-bullseye"></i>
-                        <span>Campaigns</span>
+                        <a class="nav-item1" href="./error.html">Campaigns</a>
                     </div>
                     <div class="nav-item">
                         <i class="fas fa-dollar-sign"></i>
-                        <span>ROAS</span>
+                        <a class="nav-item1" href="./error.html">ROAS</a>
                     </div>
                     <div class="nav-item">
                         <i class="fas fa-users"></i>
-                        <span>Audiences</span>
+                        <a class="nav-item1" href="./error.html">Audiences</a>
                     </div>
                     <div class="nav-item">
                         <i class="fas fa-cog"></i>
-                        <span>Settings</span>
+                        <a class="nav-item1" href="./error.html">Settings</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Main Dashboard Content -->
+         
             <div class="dashboard-main">
-                <!-- KPI Cards Row -->
+             
                 <div class="kpi-grid">
                     <div class="kpi-card revenue">
                         <div class="kpi-header">
@@ -535,7 +535,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Navbar scroll effect
             window.addEventListener('scroll', () => {
-                navbar.style.top = window.scrollY > 50 ? '0.5rem' : '0.5rem';
+                navbar.style.top = window.scrollY > 50 ? '0rem' : '0rem';
             });
 
             // Hamburger toggle

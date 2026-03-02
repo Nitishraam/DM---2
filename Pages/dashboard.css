@@ -67,20 +67,19 @@ body {
       }
 .navbar {
     position: fixed;
-    top: 0.5rem;
+    /* top: 0.5rem; */
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1100px;
+    width: 100%;
+    /* max-width: 1100px; */
     background: rgba(229, 229, 229, 0.822);
     backdrop-filter: blur(30px);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 0.6rem 2rem;
     z-index: 1000;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
 }
-
 .nav-container {
     display: flex;
     align-items: center;
@@ -228,10 +227,10 @@ body.menu-open {
 }
 @media (max-width: 768px) {
     .navbar {
-        top: 1rem;
-        width: 95%;
+        /* top: 1rem; */
+        width: 100%;
         padding: 0.5rem;
-        border-radius: 40px;
+        /* border-radius: 40px; */
     }
 
       .center-content{
@@ -407,8 +406,19 @@ body.menu-open {
     height: fit-content;
     align-self: start;
 }
-
-.sidebar-nav .nav-item {
+.nav-item{
+      display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+.sidebar-nav .nav-item1{
     display: flex;
     align-items: center;
     gap: 16px;
@@ -420,13 +430,19 @@ body.menu-open {
     font-size: 0.95rem;
     margin-bottom: 8px;
 }
-
-.sidebar-nav .nav-item.active {
+.nav-item1{
+    text-decoration: none;
+}
+.nav-item1{
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+}
+.sidebar-nav .nav-item1.active {
     background: linear-gradient(135deg, #f4a261, #e76f51);
     box-shadow: 0 8px 25px rgba(244,162,97,0.3);
 }
 
-.sidebar-nav .nav-item:hover:not(.active) {
+.sidebar-nav .nav-item1:hover:not(.active) {
     background: rgba(255,255,255,0.08);
 }
 
@@ -481,7 +497,7 @@ body.menu-open {
 }
 
 .kpi-value {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 900;
     background: linear-gradient(135deg, #f4a261, #e76f51);
     -webkit-background-clip: text;
