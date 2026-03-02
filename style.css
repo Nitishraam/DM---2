@@ -1150,6 +1150,7 @@ body.menu-open {
 }
 
 .crew-strip {
+    width: 100%;
     padding: 30px 0px;
     /* background: linear-gradient(135deg, #fffaf4 0%, #fff3e8 100%); */
 }
