@@ -524,6 +524,9 @@ body.menu-open {
         max-width: 320px;
         justify-content: center;
     }
+    .contact-hero .container{
+        margin-top: 45px;
+    }
 }
 
 

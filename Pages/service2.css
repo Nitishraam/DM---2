@@ -1390,6 +1390,7 @@ body.menu-open {
 .svc2-comparisons {
     background: linear-gradient(135deg, #ffffff 0%, #fef7f7 100%);
     position: relative;
+    overflow: hidden;
 }
 
 .svc2-comparisons .container {
@@ -1584,6 +1585,7 @@ body.menu-open {
 .svc2-cta-v3 {
     background: linear-gradient(145deg, #0a0a0a 0%, #1a0f0f 50%, #2a1515 100%);
     position: relative;
+    overflow: hidden;
 }
 
 .svc2-cta-v3::before {

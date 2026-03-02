@@ -345,6 +345,7 @@ body.menu-open {
 .contact2-hero {
     background: linear-gradient(135deg, #e47979 0%, #fef7ff 50%, #eca194 100%);
     position: relative;
+    overflow: hidden;
 }
 
 .contact2-hero::before {
@@ -586,6 +587,7 @@ body.menu-open {
 .contact-info-section {
     padding: 30px 0;
     background: linear-gradient(135deg, #fff 0%, #fafbfc 100%);
+    overflow: hidden;
 }
 
 .section-header {
@@ -747,11 +749,14 @@ body.menu-open {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 1px;
     }
     
     .contact-item2 {
         padding: 25px 20px;
+    }
+    .contact2-hero .container{
+        padding: 0px;
     }
 }
 

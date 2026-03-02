@@ -516,7 +516,9 @@ body.menu-open {
     .blog-hero-center h1 {
         font-size: 2.8rem;
     }
-    
+    .blog-hero-center .container{
+        margin-top: 45px;
+    }
     .blog-hero-center .blog-stats {
         gap: 40px;
     }
@@ -537,6 +539,7 @@ body.menu-open {
 .featured-posts {
     padding: 30px 0;
     background: white;
+    overflow: hidden;
 }
 
 .featured-posts .container {
@@ -722,6 +725,7 @@ body.menu-open {
 
 .recent-posts {
     background: white;
+    overflow: hidden;
 }
 
 .recent-posts .container {
@@ -884,6 +888,7 @@ body.menu-open {
 
 .popular-posts {
     background: #f8fafc;
+    overflow: hidden;
 }
 
 .popular-posts .container {
@@ -1074,6 +1079,7 @@ body.menu-open {
 .newsletter-signup {
     background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
     color: white;
+    overflow: hidden;
 }
 
 .newsletter-signup .container {
@@ -1276,6 +1282,7 @@ body.menu-open {
 .blog-final-cta {
     background: linear-gradient(135deg, #71390b 0%, #834130 100%);
     color: white;
+    overflow: hidden;
 }
 
 .blog-final-cta .container {
@@ -1397,6 +1404,7 @@ body.menu-open {
 
 .recent-comments {
     background: white;
+    overflow: hidden;
 }
 
 .recent-comments .container {

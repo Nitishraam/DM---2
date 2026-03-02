@@ -703,6 +703,9 @@ tr:hover td {
     .chart-canvas {
         height: 280px;
     }
+    .dashboard-container{
+        padding: 0px;
+    }
 }
 
 
